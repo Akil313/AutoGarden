@@ -1,4 +1,4 @@
-const socket = require('socket.io-client')("http://localhost:3000");
+const socket = require('socket.io-client')("https://dry-spire-58310.herokuapp.com/");
 const five = require('johnny-five');
 const Raspi = require("raspi-io").RaspiIO;
 
