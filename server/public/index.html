@@ -9,10 +9,18 @@
 </head>
 
 <body>
-    <div id="workspace">
-        <input type="checkbox" id="change">Change
-        <div id="status"></div>
+    <div class="container">
+        <h1 class="text-center">Auto Garden</h1>
+        <div id="workspace">
+            <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="change">
+                <label class="custom-control-label" for="change">Toggle the state of the motor</label>
+            </div>
+            <div id="status">False</div>
+        </div>
+        <div id="datetime"></div>
     </div>
+    
 
     <!--Script tags for Bootstrap and JS Files
     ============================================
@@ -22,8 +30,24 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
     <script src="/socket.io/socket.io.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js"></script>
 
     <script type="text/javascript">
+        var datetime = null;
+        var date = null;
+
+
+        var update = function(){
+            date = moment();
+            datetime.html(date.format("DD-MM-YYYY HH:mm:ss A"))
+        }
+        
+        $(document).ready(function(){
+            datetime = $('#datetime');
+            update();
+            setInterval(update, 1000);
+        });
+
         var socket = io.connect('/');
         changeCheck = $("#change");
 
@@ -31,7 +55,5 @@
             socket.emit('motorStatus', changeCheck.prop('checked'))
         });
     </script>
-
-    <!--<script src="/robot.js"></script>-->
 </body>
 </html>

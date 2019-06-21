@@ -1,6 +1,7 @@
 const app = require('express')();
 const server = require('http').Server(app);
 const io = require('socket.io')(server);
+const moment = require('moment');
 
 const port = process.env.PORT || 3000;
 
@@ -12,6 +13,9 @@ app.get('/', function (req, res) {
 
 //Static files
 //app.use(express.static('public'));
+
+var now = moment().format();
+console.log(now)
 
 io.on('connection', (socket) => {
     console.log('Socket connection made ... Welcome', socket.id);
