@@ -69,6 +69,11 @@
     "@serialport/binding-mock" "^2.0.5"
     debug "^4.1.1"
 
+abstract-io@^1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/abstract-io/-/abstract-io-1.6.0.tgz#f423a75cad7301af53d8fddbcf490a14929786d2"
+  integrity sha512-9plRiMlDVh4Yd1ewLM1hZFlgCQ4/qlAi05U1cnuiMBS7/ClQEeMbMbwHQn4wn/q6lz+/82pRSLOwJuaxgNpxgA==
+
 after@0.8.2:
   version "0.8.2"
   resolved "https://registry.yarnpkg.com/after/-/after-0.8.2.tgz#fedb394f9f0e02aa9768e702bda23b505fae7e1f"
@@ -131,7 +136,7 @@ better-assert@~1.0.0:
   dependencies:
     callsite "1.0.0"
 
-bindings@^1.3.0:
+bindings@^1.3.0, bindings@^1.5.0:
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/bindings/-/bindings-1.5.0.tgz#10353c9e945334bc0511a6d90b38fbc7c9c504df"
   integrity sha512-p2q/t/mhvuOj/UeLlV6566GD/guowlr0hHxClI0W9m7MWYkL1F0hLo+0Aexs9HSPCtR1SXQ0TD3MMKrXZajbiQ==
@@ -192,6 +197,11 @@ chownr@^1.0.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/chownr/-/chownr-1.1.1.tgz#54726b8b8fff4df053c42187e801fb4412df1494"
   integrity sha512-j38EvO5+LHX84jlo6h4UzmOwi0UgW61WRyPtJz4qaadK5eY3BTS5TY/S1Stc3Uk2lIM6TPevAlULiEJwie860g==
+
+clone@^2.1.2:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/clone/-/clone-2.1.2.tgz#1b7f4b9f591f1e8f83670401600345a02887435f"
+  integrity sha1-G39Ln1kfHo+DZwQBYANFoCiHQ18=
 
 code-point-at@^1.0.0:
   version "1.1.0"
@@ -390,6 +400,14 @@ has-unicode@^2.0.0:
   resolved "https://registry.yarnpkg.com/has-unicode/-/has-unicode-2.0.1.tgz#e0e6fe6a28cf51138855e086d1691e771de2a8b9"
   integrity sha1-4Ob+aijPUROIVeCG0Wkedx3iqLk=
 
+i2c-bus@^5.1.0:
+  version "5.2.1"
+  resolved "https://registry.yarnpkg.com/i2c-bus/-/i2c-bus-5.2.1.tgz#ccbfff0a5f431cfcf7f17fb56624774323b7c5fd"
+  integrity sha512-ihfUEG8BPbmVkwLJv2vZmvXUNZ8TUCIqnTAVgSwzqH72jouT3HdpJOJCGIwJt8SQ8H7QpefvWqDuT40TnnUELQ==
+  dependencies:
+    bindings "^1.5.0"
+    nan "^2.14.1"
+
 indexof@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/indexof/-/indexof-0.0.1.tgz#82dc336d232b9062179d05ab3293a66059fd435d"
@@ -400,10 +418,15 @@ inherits@~2.0.3:
   resolved "https://registry.yarnpkg.com/inherits/-/inherits-2.0.3.tgz#633c2c83e3da42a502f52466022480f4208261de"
   integrity sha1-Yzwsg+PaQqUC9SRmAiSA9CCCYd4=
 
+ini-builder@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/ini-builder/-/ini-builder-1.1.1.tgz#4579a1365c73b1ac8ef88ff36f8a72c7bc228e23"
+  integrity sha512-75kk/PhKAzS/O1HnNcVKby4tgLAi/TlMyOjY23pzIAGMr2YcmqTG7T/Oe1ltHwICGZAH8eEFX77PcSv2AzByrA==
+
 ini@~1.3.0:
-  version "1.3.5"
-  resolved "https://registry.yarnpkg.com/ini/-/ini-1.3.5.tgz#eee25f56db1c9ec6085e0c22778083f596abf927"
-  integrity sha512-RZY5huIKCMRWDUqZlEi72f/lmXKMvuszcMBduliQ3nnWbx9X/ZBQO7DijMEYS9EhHBb2qacRUMtC7svLwe0lcw==
+  version "1.3.7"
+  resolved "https://registry.yarnpkg.com/ini/-/ini-1.3.7.tgz#a09363e1911972ea16d7a8851005d84cf09a9a84"
+  integrity sha512-iKpRpXP+CrP2jyrxvg1kMUpXDyRUFDWurxbnVT1vQPx+Wz9uCYsMIqYuSBLV+PAaZG/d7kRLKRFc9oDMsH+mFQ==
 
 is-fullwidth-code-point@^1.0.0:
   version "1.0.0"
@@ -426,6 +449,19 @@ isarray@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/isarray/-/isarray-1.0.0.tgz#bb935d48582cba168c06834957a54a3e07124f11"
   integrity sha1-u5NdSFgsuhaMBoNJV6VKPgcSTxE=
+
+j5-io-types@^2.4.0, j5-io-types@^2.5.0:
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/j5-io-types/-/j5-io-types-2.5.0.tgz#dffdfcf993dcf10fc66f187edaef8d2dda02a1c7"
+  integrity sha512-S44ds7NZfVUL3xsvboNEIXnrZ0TDUPixKtdcO4+L3bUctWzAtHSTvPmyU9G8urqfzXl6d22xBq7c+sjGUrD4+w==
+
+j5-io@^3.1.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/j5-io/-/j5-io-3.2.0.tgz#e070c648c433e301ac53a57357e952777dbfc72c"
+  integrity sha512-1RX5kj0rJ7Hw7GptAw8oPdT0uyF2an/dNdAr0xZYqBRS9sT7ngKDXBcJTsvxzO3+OaBdOlWjdnLorxrXhgKQNg==
+  dependencies:
+    abstract-io "^1.6.0"
+    j5-io-types "^2.5.0"
 
 johnny-five@^1.1.0:
   version "1.1.0"
@@ -490,6 +526,11 @@ nan@^2.13.2:
   version "2.14.0"
   resolved "https://registry.yarnpkg.com/nan/-/nan-2.14.0.tgz#7818f722027b2459a86f0295d434d1fc2336c52c"
   integrity sha512-INOFj37C7k3AfaNTtX8RhsTw7qRy7eLET14cROi9+5HAVbbHuIWUHEauBv5qT4Av2tWasiTY1Jw6puUNqRJXQg==
+
+nan@^2.14.0, nan@^2.14.1:
+  version "2.14.2"
+  resolved "https://registry.yarnpkg.com/nan/-/nan-2.14.2.tgz#f5376400695168f4cc694ac9393d0c9585eeea19"
+  integrity sha512-M2ufzIiINKCuDfBSAUr1vWQ+vuVcA9kqx8JJUsbQi6yf1uGRyb7HfpdfUr5qLXf3B/t8dPvcjhKMmlfnP47EzQ==
 
 nanotimer@0.3.10:
   version "0.3.10"
@@ -564,6 +605,14 @@ parseuri@0.0.5:
   dependencies:
     better-assert "~1.0.0"
 
+pigpio@^1.2.1:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/pigpio/-/pigpio-1.3.0.tgz#727766ff3acd9a53d72ec25debb9e33d17717a3e"
+  integrity sha512-9W6VBF6tvmLyEaYdp+3lZ0dvnFsdtH4lK6p7s0O1MX4pu92zwO6o2YUJQabF/0bmtnME5g40yURp7jGVjdRhcw==
+  dependencies:
+    bindings "^1.5.0"
+    nan "^2.14.0"
+
 prebuild-install@^5.2.1:
   version "5.3.0"
   resolved "https://registry.yarnpkg.com/prebuild-install/-/prebuild-install-5.3.0.tgz#58b4d8344e03590990931ee088dd5401b03004c8"
@@ -607,6 +656,94 @@ pump@^2.0.1:
     end-of-stream "^1.1.0"
     once "^1.3.1"
 
+raspi-board@^7.0.0, raspi-board@^7.1.0, raspi-board@^7.1.2:
+  version "7.3.3"
+  resolved "https://registry.yarnpkg.com/raspi-board/-/raspi-board-7.3.3.tgz#ac358dab4e900f332b2b6d1a52bfe674f81e96cb"
+  integrity sha512-2PJFfoZ7Sma5nR2gqRso55XvmEvc1Donc+dwY6mhCddbNXPdvsr45J3bYON1h1619PFkTFcuzW+i5e5LZvKOZQ==
+  dependencies:
+    j5-io-types "^2.4.0"
+
+raspi-gpio@^6.2.1:
+  version "6.2.2"
+  resolved "https://registry.yarnpkg.com/raspi-gpio/-/raspi-gpio-6.2.2.tgz#18f7ef7eac6dd9ee2e70f4e9e690180c3f4fcd58"
+  integrity sha512-3K8wicffH7HhQ9crGNi+BWUO86YVSGBF70bT7qGWPoBSy1QbNP1/bkLqqkZrNXPi/54PiHiz+Tf9e2YbqwoBig==
+  dependencies:
+    j5-io-types "^2.4.0"
+    pigpio "^1.2.1"
+    raspi-board "^7.1.2"
+    raspi-peripheral "^3.0.3"
+
+raspi-i2c@^6.2.2:
+  version "6.2.4"
+  resolved "https://registry.yarnpkg.com/raspi-i2c/-/raspi-i2c-6.2.4.tgz#be22abfba708ce5b02a2fcac27d4466a231ca680"
+  integrity sha512-mjWYpjr2h8ZqYJFlUTykHIXZmSwgF+VnT+NUvGbpS8J7GikWr4ljkrhUYmxZaiztetLREhNpcRoEpTW+5jKH6A==
+  dependencies:
+    i2c-bus "^5.1.0"
+    ini-builder "^1.1.1"
+    j5-io-types "^2.5.0"
+    raspi-board "^7.1.0"
+    raspi-peripheral "^3.0.3"
+
+raspi-io@^10.0.2:
+  version "10.0.4"
+  resolved "https://registry.yarnpkg.com/raspi-io/-/raspi-io-10.0.4.tgz#7df2b86169d7a68937c26c5dad7149b0cca45f52"
+  integrity sha512-quCrIvi9DhfR1doPrLnfA9AFCUNIf8Odwn6nc0uHPZ6SQ2fufpxfYgMRspGnQo4uSgIYHEACSiBQdoQcDPsAwQ==
+  dependencies:
+    clone "^2.1.2"
+    j5-io "^3.1.0"
+    j5-io-types "^2.4.0"
+    raspi "^6.0.1"
+    raspi-board "^7.1.2"
+    raspi-gpio "^6.2.1"
+    raspi-i2c "^6.2.2"
+    raspi-led "^2.1.1"
+    raspi-serial "^5.1.1"
+    raspi-soft-pwm "^6.0.1"
+
+raspi-led@^2.1.1:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/raspi-led/-/raspi-led-2.1.2.tgz#27f6133fe2a13ed2f854eae9fb3f777cceb16f70"
+  integrity sha512-sWkdp938+5SkmupMHCuy7eyE52Lx3xJgn9Bw8SXOOtS7RV3KE1xnPrGgYwNN77HpIBBcGK47hrLLVhMnkLa6mQ==
+  dependencies:
+    j5-io-types "^2.4.0"
+    raspi-peripheral "^3.0.3"
+
+raspi-peripheral@^3.0.3:
+  version "3.0.4"
+  resolved "https://registry.yarnpkg.com/raspi-peripheral/-/raspi-peripheral-3.0.4.tgz#6b39fc99083ef8eace3c77b2d29ab646c0f9da96"
+  integrity sha512-IG/s6Y4isbTLUmuMPc3TtCLT2jm2ist66p2HmfOBalQ47Z6RKhLJsHj49c0e/aIZ7s45JGeAm6A9iO1Q/rMdVg==
+  dependencies:
+    j5-io-types "^2.4.0"
+    raspi "^6.0.1"
+    raspi-board "^7.1.2"
+
+raspi-serial@^5.1.1:
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/raspi-serial/-/raspi-serial-5.1.2.tgz#521d2c5daf433fe9467733260922ab9136739737"
+  integrity sha512-0zONV2aiEVJMloJAS3GMAF2fOFPftlUHa2RulE2W53lvD/F+0iEsUnTVfPtWQa2pHLVBeu/OZHgAth2dcgJRBg==
+  dependencies:
+    j5-io-types "^2.4.0"
+    raspi-peripheral "^3.0.3"
+    serialport "^7.1.4"
+
+raspi-soft-pwm@^6.0.1:
+  version "6.0.2"
+  resolved "https://registry.yarnpkg.com/raspi-soft-pwm/-/raspi-soft-pwm-6.0.2.tgz#80a7207841131344fed969b2fee7234d0e234dca"
+  integrity sha512-rftkopfH+K66hc0re1bvawj2MKpB7cA034bURZqd/qdRvuV8CUjFRxmDFR+7O7JJWpb2xdkUQtAMeLWA3VoCtQ==
+  dependencies:
+    j5-io-types "^2.4.0"
+    pigpio "^1.2.1"
+    raspi-board "^7.1.2"
+    raspi-peripheral "^3.0.3"
+
+raspi@^6.0.1:
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/raspi/-/raspi-6.0.1.tgz#a74d51b6764bbd24b676ad3c01dffcf353354ccd"
+  integrity sha512-vv7P8QgUCC0wjN9aBGi7SKy7LClZSsIMSQyEE+GUVzImbX44OTftj3Vjo+Kbl2d+acmjBNNkEk/jnzXDZMcI5g==
+  dependencies:
+    j5-io-types "^2.4.0"
+    raspi-board "^7.0.0"
+
 rc@^1.2.7:
   version "1.2.8"
   resolved "https://registry.yarnpkg.com/rc/-/rc-1.2.8.tgz#cd924bf5200a075b83c188cd6b9e211b7fc0d3ed"
@@ -640,7 +777,7 @@ semver@^5.4.1:
   resolved "https://registry.yarnpkg.com/semver/-/semver-5.7.0.tgz#790a7cf6fea5459bac96110b29b60412dc8ff96b"
   integrity sha512-Ya52jSX2u7QKghxeoFGpLwCtGlt7j0oY9DYb5apt9nPlJ42ID+ulTXESnt/qAQcoSERyZ5sl3LDIOw0nAn/5DA==
 
-serialport@^7.1.3, serialport@^7.1.5:
+serialport@^7.1.3, serialport@^7.1.4, serialport@^7.1.5:
   version "7.1.5"
   resolved "https://registry.yarnpkg.com/serialport/-/serialport-7.1.5.tgz#3395e3cc33c6584731ccce62aaa82b0f6b7e0077"
   integrity sha512-NplGdqaY+ZL8t3t5egbT+3oqLW4d7WvDT/x1ACxAyWa1fSnx+KTAmlDHeCls39lXwu8voaOr3bPOW4bwM7PdAA==
